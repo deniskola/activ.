@@ -1,7 +1,7 @@
 import "./App.css";
 import React, {useState, useEffect} from "react";
 import Navbar from "./Components/NavBar";
-import Homepage from "./Components/Homepage";
+import EntryPage from "./Components/EntryPage";
 import About from "./Components/About";
 import Home from "./Components/Home";
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
@@ -29,7 +29,7 @@ function App() {
   return (
     <Router>
       <div className="container">
-        <Route exact path="/" component={Homepage} />
+        <Route exact path="/" component={EntryPage} />
         <Route
           path={"/(.+)"}
           render={() => (
@@ -42,7 +42,7 @@ function App() {
                     <Home
                       sendRequest={sendRequest}
                       setSendRequest={() => setSendRequest(true)}
-                      activity={items.activity}
+                      items={items}
                     />
                   )}
                 />

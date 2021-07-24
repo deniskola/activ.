@@ -12,41 +12,118 @@
   background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
 }
 
-button {
-  width: 100px;
-  height: 100px;
-  transition: 0.3s;
-}
-
-button:active {
-  transform: translate(0, 5px);
-}
-
 .logo {
   width: 20px;
   height: 20px;
 }
 
 .navbar {
-  position: absolute;
-  padding: 0 5% 0 5%;
+  position: relative;
+  padding: 0 3% 0 3%;
   width: 100vw;
   height: 10vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #86bf98;
 }
 
 .home,
-.about,
-.homepage {
+.about {
+  width: 100vw;
+  height: 90vh;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5% 5px 5% 5px;
+}
+.entry-page {
   width: 100vw;
   height: 100vh;
-  display: grid;
-  place-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 5px 0 5px;
 }
 
 a {
   margin: 0 10px 0 10px;
   color: white;
+}
+
+.entry-page button {
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 1px;
+  width: 200px;
+  height: 50px;
+  padding: 13px 50px 13px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 0;
+  overflow: hidden;
+}
+
+.entry-page button::after {
+  padding-top: 12px;
+  content: "Get Started";
+  background-color: #ee6984;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 36px;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+.entry-page button:hover::after {
+  top: 0px;
+  left: 0px;
+}
+
+.icon {
+  width: 300px;
+}
+
+.activities-details {
+  position: relative;
+  text-align: left;
+}
+
+.activities-btn {
+  margin-top: 20px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #86bf98;
+  border: 2px solid white;
+  color: white;
+}
+
+.activities-btn:active {
+  transform: rotate(90deg);
+}
+.activities-btn:hover {
+  cursor: pointer;
+}
+.activities-btn img {
+  height: 60%;
+}
+.navbar span {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar span:hover {
+  border-bottom: 2px solid white;
+}
+
+.update-icon {
+  width: 50px;
 }
