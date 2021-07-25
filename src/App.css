@@ -26,18 +26,28 @@
   justify-content: space-between;
   align-items: center;
   background-color: #86bf98;
+  border-bottom: 2px solid white;
 }
 
 .home,
 .about {
   width: 100vw;
   height: 90vh;
-  justify-content: space-between;
+  padding: 5% 5px 5% 5px;
+}
+
+.home {
+  display: grid;
+  grid-template-rows: 30% 40% 30%;
+  place-items: center;
+}
+.about {
+  justify-content: space-evenly;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5% 5px 5% 5px;
 }
+
 .entry-page {
   width: 100vw;
   height: 100vh;
@@ -49,8 +59,7 @@
 }
 
 a {
-  margin: 0 10px 0 10px;
-  color: white;
+  margin: 0 5px 0 5px;
 }
 
 .entry-page button {
@@ -59,27 +68,15 @@ a {
   letter-spacing: 1px;
   width: 200px;
   height: 50px;
-  padding: 13px 50px 13px;
+
   outline: 0;
-  border: 1px solid black;
+  border: 2px solid white;
   cursor: pointer;
   position: relative;
   background-color: rgba(0, 0, 0, 0);
   z-index: 0;
   overflow: hidden;
-}
-
-.entry-page button::after {
-  padding-top: 12px;
-  content: "Get Started";
-  background-color: #ee6984;
-  width: 100%;
-  z-index: -1;
-  position: absolute;
-  height: 36px;
-  top: 7px;
-  left: 7px;
-  transition: 0.2s;
+  background-color: #86bf98;
 }
 
 .entry-page button:hover::after {
@@ -92,7 +89,6 @@ a {
 }
 
 .activities-details {
-  position: relative;
   text-align: left;
 }
 
@@ -126,4 +122,9 @@ a {
 
 .update-icon {
   width: 50px;
+}
+
+.entry-page img {
+  width: 300px;
+  padding: 10px 0 10px 0;
 }

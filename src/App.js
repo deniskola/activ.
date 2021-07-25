@@ -10,7 +10,7 @@ function App() {
   const [items, setItems] = useState([]);
 
   const [sendRequest, setSendRequest] = useState(false);
-  const url = "http://www.boredapi.com/api/activity/";
+  const url = "https://www.boredapi.com/api/activity/";
 
   useEffect(() => {
     if (sendRequest) {

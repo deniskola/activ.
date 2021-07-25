@@ -1,8 +1,6 @@
 import React from "react";
 import {Link} from "react-router-dom";
 
-import {IconContext} from "react-icons";
-
 const Navbar = () => {
   return (
     <div className="navbar">
@@ -14,7 +12,7 @@ const Navbar = () => {
           <span>Home</span>
         </Link>
         <Link style={{textDecoration: "none"}} to="/about">
-          <span>Info</span>
+          <span>About</span>
         </Link>
       </div>
     </div>

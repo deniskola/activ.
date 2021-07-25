@@ -1,15 +1,32 @@
 import React from "react";
-import {GrCodepen, GrGithub, GrInstagram, GrTwitter} from "react-icons/gr";
-import {IconContext} from "react-icons";
+import {GrCodeSandbox, GrGithub} from "react-icons/gr";
 
 const About = () => {
   return (
     <div className="about">
-      <p>This web app helps you to find an activity if you are bored.</p>
-      <p>You can load random activities and try them in real life.</p>
-      <p>Made by Denis Kolaj</p>
+      <h1>About</h1>
       <div>
-        <GrGithub />
+        <p>
+          <b>
+            This website can help people to find new activities to do if they
+            are bored.
+          </b>
+        </p>
+
+        <p>
+          <b>You can load random activities and try them in real life.</b>
+        </p>
+      </div>
+      <div style={{marginTop: "50px"}}>
+        <span>Made by Denis Kolaj </span>
+
+        <a href="https://github.com/deniskola">
+          <GrGithub />
+        </a>
+
+        <a href="https://codesandbox.io/u/deniskola">
+          <GrCodeSandbox />
+        </a>
       </div>
     </div>
   );
